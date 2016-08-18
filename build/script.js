@@ -44,15 +44,60 @@
 // }
 // person.sayName();
 
-var person = {
-   name: 'Aristotel',
-   hobbies: ['Philosophy', 'Reading', 'Drinking'],
-   showHobbies: function showHobbies() {
-      var _this = this;
+// let person = {
+//    name: 'Aristotel',
+//    hobbies: ['Philosophy', 'Reading', 'Drinking'],
+//    showHobbies: function() {
+//       this.hobbies.forEach( hobby => {
+//          console.log(`${this.name} likes ${hobby}`)
+//       });
+//    }
+// }
+// person.showHobbies();
 
-      this.hobbies.forEach(function (hobby) {
-         console.log(_this.name + ' likes ' + hobby);
-      });
-   }
+// Spread operator and Rest parameters
+// let sum = function () {
+//    return Array.prototype.reduce.call(arguments, (prev,current)=>{
+//       return prev+current;
+//    });
+// };
+// console.log(sum(2,3,4,5));
+
+// // Rest parameters
+// let sum = function(...args) {
+//    console.log(args);
+//    return args.reduce((prev, current)=>prev+current);
+// };
+// console.log(sum(2,3,4,5));
+
+// let multiply = (mul, ...numbers)=> {
+//    return numbers.map((n)=>{
+//       return mul * n
+//    });
+// };
+// let result = multiply(2,7,4,5);
+// console.log(result);
+
+// // Spread operator
+// let numbers = [4,6,3,8];
+// let max = Math.max(...numbers);
+// console.log(max);
+
+// // Concatenate arrays with the spread operator
+// let numbers = ['a','b','c'];
+// let secondArray = [3,4,...numbers,6,7,2,];
+// console.log(secondArray);
+
+// Destructuring
+
+var person = {
+   name: 'Liviu',
+   age: 30,
+   location: 'Tm'
 };
-person.showHobbies();
+
+var age = person.age;
+var currentLocation = person.location;
+
+
+console.log(age, currentLocation);
