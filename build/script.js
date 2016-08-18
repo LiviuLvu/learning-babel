@@ -1,5 +1,3 @@
-'use strict';
-
 // 'use strict';
 
 // this is a test to convert syntax from es6 to es5
@@ -90,14 +88,25 @@
 
 // Destructuring
 
-var person = {
-   name: 'Liviu',
-   age: 30,
-   location: 'Tm'
-};
+// let person = {
+//    name: 'Liviu',
+//    age: 30,
+//    location: 'Tm'
+// };
+// let {age, location: currentLocation} = person;
+// let key = 'age';
+// let {[key] : keyAge} = person;
+// console.log(keyAge);
 
-var age = person.age;
-var currentLocation = person.location;
+// let numbers = [1,2,3,4];
 
+// without destructuring
+// let first = numbers[0];
+// let second = numbers[1];
 
-console.log(age, currentLocation);
+// using destructuring
+// left side - new values we want to create
+// right side - data we want to extract from
+// let [first, second,,fourth] = numbers;
+// console.log(first,second,fourth);
+"use strict";

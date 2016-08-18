@@ -82,6 +82,30 @@
 // console.log(max);
 
 // // Concatenate arrays with the spread operator
-let numbers = ['a','b','c'];
-let secondArray = [3,4,...numbers,6,7,2,];
-console.log(secondArray);
+// let numbers = ['a','b','c'];
+// let secondArray = [3,4,...numbers,6,7,2,];
+// console.log(secondArray);
+
+// Destructuring
+
+// let person = {
+//    name: 'Liviu',
+//    age: 30,
+//    location: 'Tm'
+// };
+// let {age, location: currentLocation} = person;
+// let key = 'age';
+// let {[key] : keyAge} = person;
+// console.log(keyAge);
+
+// let numbers = [1,2,3,4];
+
+// without destructuring
+// let first = numbers[0];
+// let second = numbers[1];
+
+// using destructuring
+// left side - new values we want to create
+// right side - data we want to extract from
+// let [first, second,,fourth] = numbers;
+// console.log(first,second,fourth);
