@@ -152,8 +152,7 @@
 // const myJetFighter = new JetFighter();
 // // console.log(myPlane.altitude);
 // console.log(myJetFighter.speed);
-
-// es6
+// // es6 classes
 // class Human {
 //    constructor(height){
 //       this.height = height;
@@ -180,3 +179,42 @@
 // // const myWarrior = new Warrior();
 // // console.log(myWarrior);
 // console.log(Human.sayHello);
+
+// objects
+
+// let flower = {
+//    height: 10,
+//    color: 'yellow',
+//    // shorthand method
+//    grow() {
+//       this.height +=5;
+//    }
+// };
+// flower.grow();
+// console.log(flower.height);
+
+// let height = 4;
+// let strength = 100;
+// let person = {
+//    name: 'Liviu',
+//    height: '181',
+//    strength: 100
+// };
+// let warrior = {
+//    height: '200',
+//    strength: 1000
+// };
+// let myWarrior = Object.assign({}, person, warrior);
+// console.log(myWarrior);
+
+let person1 = {
+   name: 'Liviu',
+   age: 30
+};
+
+let person2 = Object.assign({}, person1, {
+   name: 'McJohn',
+   age: 24,
+   style: 'Autumn'
+});
+console.log(person1, person2);
