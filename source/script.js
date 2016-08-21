@@ -1,5 +1,3 @@
-// 'use strict';
-
 // this is a test to convert syntax from es6 to es5
 
 // const arr = [1, 2, 3];
@@ -109,3 +107,31 @@
 // right side - data we want to extract from
 // let [first, second,,fourth] = numbers;
 // console.log(first,second,fourth);
+
+// Arrays
+// let programmingLanguages = ['js', 'css', 'html'];
+// the old way
+// for (let i = 0; i < programmingLanguages.length; i++) {
+//    console.log(`I really like ${programmingLanguages[i]}`);
+// }
+// new es6 way
+// for(let language of programmingLanguages) {
+//    console.log(`I really like ${language}`);
+// }
+
+let students = [{
+   name: 'Steve',
+   course: 'History'
+}, {
+   name: 'Lisa',
+   course: 'Biology'
+}, {
+   name: 'John',
+   course: 'Physics'
+}];
+
+let peopleArray = students.find((student) => {
+   return student.course === 'Physics';
+})
+
+console.log(peopleArray);
