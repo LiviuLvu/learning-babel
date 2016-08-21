@@ -119,19 +119,64 @@
 //    console.log(`I really like ${language}`);
 // }
 
-let students = [{
-   name: 'Steve',
-   course: 'History'
-}, {
-   name: 'Lisa',
-   course: 'Biology'
-}, {
-   name: 'John',
-   course: 'Physics'
-}];
+// let students = [{
+//    name: 'Steve',
+//    course: 'History'
+// }, {
+//    name: 'Lisa',
+//    course: 'Biology'
+// }, {
+//    name: 'John',
+//    course: 'Physics'
+// }];
+// let peopleArray = students.find((student) => {
+//    return student.course === 'Physics';
+// })
+// console.log(peopleArray);
 
-let peopleArray = students.find((student) => {
-   return student.course === 'Physics';
-})
+// classes
 
-console.log(peopleArray);
+// function Plane() {
+//     this.wings=2;
+//     this.speed = 100;
+//     this.altitude = 0; 
+// }
+// Plane.prototype.fly = function() {
+//    this.altitude = 3000;
+// };
+// const myPlane = new Plane();
+// function JetFighter () {
+//     this.speed = 1000; 
+// }
+// JetFighter.prototype = new Plane();
+// const myJetFighter = new JetFighter();
+// // console.log(myPlane.altitude);
+// console.log(myJetFighter.speed);
+
+// es6
+// class Human {
+//    constructor(height){
+//       this.height = height;
+//       this.location = {
+//          x:0,
+//          y:0
+//       };
+//    // note there is no comma after method
+//    }
+//    walk(x,y){
+//       this.location.x += x;
+//       this.location.y += y;
+//    }
+//    static get sayHello(){
+//       return 'Aloha!'
+//    }
+// }
+// class Warrior extends Human{
+//    constructor(){
+//       super();
+//       this.strength =10;
+//    }
+// }
+// // const myWarrior = new Warrior();
+// // console.log(myWarrior);
+// console.log(Human.sayHello);
